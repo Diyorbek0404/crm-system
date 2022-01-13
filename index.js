@@ -12,8 +12,8 @@ const dashboardRoute = require("./routes/dashboard")
 const XaridorRoute = require("./routes/xaridor")
 const cartRoute = require("./routes/cart")
 dotenv.config()
-
-app.use(express.json())
+app.use(express.json()) 
+app.use(cors())
 
 mongoose.connect("mongodb+srv://kuldashev:mO5JzQd3x8annG8z@cluster0.r6vwn.mongodb.net/mmm?retryWrites=true&w=majority", {
     useNewUrlParser: true,
